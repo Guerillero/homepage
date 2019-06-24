@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Acceptable Use Policy Silliness</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="header">
+      <div id="header-home">
+        <a href="/" title="Home"><i class="fas fa-home fa-2x"></i></a>
+        <a href="/about" title="About"><i class="fas fa-user fa-2x"></i></a>
+        <a href="/maps" title="Maps"><i class="fas fa-map fa-2x"></i></a>
+        <a href="/CV.pdf" title="CV"><i class="fas fa-list-alt fa-2x"></i></a>
+        <a href="/contact/" title="Contact me"><i class="fas fa-envelope fa-2x"></i></a>
+      </div>
+    </div>
+    <div id="main">
+      <div id="main-content">
+        <h1>Acceptable Use Policy Silliness</h1>
+        <center>21/08/2013</center>
+        <br>
+        Like many schools, my college has an <a href="http://www.washcoll.edu/live/files/1075-oititresourcespdf">Acceptable Use Policy [PDF]</a> (AUP). This seven page long document, that I, as a user, claim to have read and agreed to when I log in to the wi-fi every day, is as impenetrable as Telecom documentation. But since I have been agreeing to this text for the past two years and I have two more years where I have little choice but to agree to follow it, I attempted to actually read the document to see what it says.
+
+The first thing that I noticed about this document is that it is nearly impossible to not break. Even if a student isn't looking to get into trouble<sup>[<a name="Note1T"></a><a href="#Note1">1</a>]</sup>, an angry SysAdmin could bring the hammer down. For example
+
+
+<blockquote>College community members must respect the privacy of, or other restrictions placed upon, data or information stored or transmitted across computers and network systems, even when data or information resources are not securely protected.</blockquote>
+
+and this is an example of a violation of this clause
+
+<blockquote>disseminating in any form, to an entity, data or information obtained from any system regardless of whether or not one is authorized to access said data or information;</blockquote>
+
+While It makes sense to prohibit <a href="https://en.wikipedia.org/wiki/Wikipedia:BEANS">Steve the Cracker from setting up a laptop in the library with backtrack on it listening to the packets moving across and pulling out the Facebook passwords of students</a>,<sup>[<a name="Note2T"></a><a href="#Note2">2</a>]</sup> the example bugs me. I have access to private data.<sup>[<a name="Note3T"></a><a href="#Note3">3</a>]</sup> If I discuss the outcome of running a check with say the Arbitration Committee or a fellow CheckUser, I will have violated my school's AUP.
+
+Depending on how broad one wants to read the term "system", this example could have a chilling effect. Websites are often considered systems or networks in laws. It would break the AUP to download a book in the public domain from <a href="http://www.gutenberg.org/">Project Gutenberg</a>, print the book out, and mail it to a friend. I would gain information from a system (the servers of Project Gutenberg) and disseminate it to an entity (mail a paper copy to a friend).
+
+Another example that I find troubling is a section on passwords from the same list of examples. It states:
+<blockquote>providing your own password, obtaining, sharing, using, or attempting to use passwords or other information that pertain to someone else’s account;</blockquote>
+ I get that prohibiting Steve the Cracker from running L0pht Crack on a laptop and pointing it at the school's or another network.<sup>[<a name="Note4T"></a><a href="#Note4">4</a>]</sup> That is common sense. But "providing your own password" is an example of a prohibited action. Every few months I get a reminder that I will be locked out of my account if I do not change my password. It seems that by following the IT Department's prompts, to keep my account unlocked, I violate the AUP.
+
+Like almost every agreement having to do with internet access, the AUP bans having a server on the network in this clause:
+<blockquote>establishing of any type of network service, e.g. Web servers or music servers, notauthorized by the College’s Chief Information Officer [is prohibited]</blockquote>
+<a href="http://www.wired.com/threatlevel/2013/07/google-neutrality/">As Wired points out</a>, the definition of a server or network service is a gray area since many programs and apps act as both a client and a server. Popular and widely used services such as Spotify can not be used without breaking the AUP.<sup>[<a name="Note5T"></a><a href="#Note5">5</a>]</sup>
+
+I hope that the document gets a full review in the near future since it does not seem to stand up to the way that the modern internet works and how modern users use the internet.
+
+<h2>Notes</h2>
+[<a name="Note1">1</a>] I mean who goes looking for trouble... [<a href="#Note1T">↩</a>]<br>
+[<a name="Note2">2</a>] This is entirely a hypothetical and should not be attempted under any circumstance.[<a href="#Note2T">↩</a>]<br>
+[<a name="Note3">3</a>]Via the Checkuser and Oversight flags on the english language wikipedia. [<a href="https://en.wikipedia.org/w/index.php?title=Special:ListUsers&amp;limit=1&amp;username=Guerillero&amp;uselang=en">Verify</a>] Because my permisions may change in the future here is the text of the verify link: <small>Guerillero (talk | contribs | block)‏‎ (checkuser, course online volunteer, oversight, administrator) (Created on 5 November 2009 at 16:07)</small>[<a href="#Note3T">↩</a>]<br>
+[<a name="Note4">4</a>]Again, please do not do this.[<a href="#Note4T">↩</a>]<br>
+[<a name="Note5">5</a>]"Spotify uses a peer-to-peer network along with streaming servers to stream music." <a href="https://support.spotify.com/us/learn-more/faq/#!/article/Why-does-Spotify-use-so-many-internet-connections/?in=search">Spotify FAQ: Why does Spotify use so many internet connections?</a>[<a href="#Note5T">↩</a>]
+      </div>
+    </div>
+    <div id="footer">
+      © 2013-2019. Some rights reserved. Text is available under the <a href="//creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>. Visual style from <a href="//github.com/MrJuliuss/plainly">Plainly</a>. Powered by <a href="//m.do.co/c/7c7e05af5abd">Digital Ocean</a>.
+    </div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-49606110-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>
