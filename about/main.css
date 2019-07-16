@@ -52,3 +52,7 @@ h1{
   font-size: 1.7em;
   font-family: Arial, Helvetica, sans-serif;
 }
+#hs{
+  padding: 10px;
+  float: left;
+}
