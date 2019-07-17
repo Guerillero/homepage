@@ -1,19 +1,21 @@
 /**
- * Created by tfish on 1/3/2017.
- */
+  * Created by tfish on 1/3/2017.
+  * Updated by tfish on 7/17/2019.
+***/
 
-var chosenLocation = Math.floor((Math.random() * 100) + 1) % 8;
+var chosenLocation = Math.floor((Math.random() * 100) + 1) % 9;
 var chosenBasemap = Math.floor((Math.random() * 100) + 1) % 3;
 
 var places = [
-  [12, 38.892103, -77.036551, "Washington, DC"],
-  [20, 38.892103, -77.036551, "Washington, DC Metro Area"],
+  [12, 38.892103, -77.036551, "Washington, DC Metro Area"],
+  [20, 38.892103, -77.036551, "Washington, DC"],
   [14, 40.440637, -79.991701, "Pittsburgh, PA"],
-  [13, 51.494497, -0.123372, "Greater London, UK"],
+  [14, 51.508410, -0.116701, "Greater London, UK"],
   [13, 39.207785, -76.060032, "Kent County, MD"],
   [10, 36.448757, -105.007299, "Philmont Scout Ranch, NM"],
   [12, -33.903981, 18.418113, "Cape Town, ZA"],
-  [12, 25.076709, 55.137380, "Dubai, UAE"]
+  [12, 25.076709, 55.137380, "Dubai, UAE"],
+  [12, 40.020592, -79.224410, "Somerset County, PA"]
 ];
 
 var bmaps = [
