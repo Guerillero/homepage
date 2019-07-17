@@ -2,9 +2,8 @@
  * Created by tfish on 1/3/2017.
  */
 
-var chosen = Math.floor((Math.random() * 100) + 1) % 8;
-
-console.log(chosen)
+var chosenLocation = Math.floor((Math.random() * 100) + 1) % 8;
+var chosenBasemap = Math.floor((Math.random() * 100) + 1) % 3;
 
 var places = [
   [12, 38.892103, -77.036551, "Washington, DC"],
@@ -19,21 +18,19 @@ var places = [
 
 var bmaps = [
   ['http://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png', ' | Map tiles by <a href="http://stamen.com">Stamen Design</a>,  <a href="http://creativecommons.org/licenses/by/3.0"> CC BY 3.0 </a> &mdash; Map data &copy;  <a href="http://www.openstreetmap.org/copyright"> OpenStreetMap </a>'],
-
   ['https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', ' | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'],
-
-  
+  ['https://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}{r}.png', ' | Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors']
 ]
 
 var map = L.map('main-map', {
   minZoom: 5,
-  zoom: places[chosen][0],
-  center: L.latLng(places[chosen][1], places[chosen][2]),
+  zoom: places[chosenLocation][0],
+  center: L.latLng(places[chosenLocation][1], places[chosenLocation][2]),
   zoomControl: false
 });
 
-L.tileLayer(, {
-  attribution: 'View of ' + places[chosen][3] + ,
+L.tileLayer(bmaps[chosenBasemap][0], {
+  attribution: 'View of ' + places[chosenLocation][3] + bmaps[chosenBasemap][1],
   minZoom: 1,
   maxZoom: 16
 }).addTo(map);
