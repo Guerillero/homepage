@@ -17,7 +17,7 @@ var places = [
 ];
 
 var bmaps = [
-  ['http://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png', ' | Map tiles by <a href="http://stamen.com">Stamen Design</a>,  <a href="http://creativecommons.org/licenses/by/3.0"> CC BY 3.0 </a> &mdash; Map data &copy;  <a href="http://www.openstreetmap.org/copyright"> OpenStreetMap </a>'],
+  ['https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.png', ' | Map tiles by <a href="http://stamen.com">Stamen Design</a>,  <a href="http://creativecommons.org/licenses/by/3.0"> CC BY 3.0 </a> &mdash; Map data &copy;  <a href="http://www.openstreetmap.org/copyright"> OpenStreetMap </a>'],
   ['https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', ' | Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'],
   ['https://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}{r}.png', ' | Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors']
 ]
