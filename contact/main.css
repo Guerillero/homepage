@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,700);
 
 html, body {
   padding: 0;
@@ -24,13 +25,20 @@ html, body {
 }
 
 a:link, a:visited {
-  color: #28598a;
+  color: #34495e;
 }
 
 h1 {
   text-align: center;
-  font-size: 1.7em;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+}
+h2{
+  font-size: 1.5em;
+  font-family: 'Ibarra Real Nova', serif;
+}
+code {
+  color: #013220;
 }
 
 @media(min-width: 1000px){
