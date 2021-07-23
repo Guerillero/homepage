@@ -39,6 +39,7 @@ hr {
 
 @media(min-width: 800px){
     #main-content{
+        display:flex;
         text-align:center;
         background-color: #f6f6f6;
         padding: 1%;
@@ -53,10 +54,21 @@ hr {
     height: 100%;
     z-index: 1;
     }
+    #text{
+      flex: 4;
+    }
+    #logo{
+      flex: 1;
+    }
+    img{
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
 }
 @media(max-width: 800px){
     #main{
-        background-color: #e7e7e7;
+        background-color: #f6f6f6;
     }
     #main-content{
         padding: 10%;
@@ -67,10 +79,7 @@ hr {
         display: none;
     }
     #name{
-        font-size: 3.5em;
-    }
-    .name-first-letter{
-        font-size: 1.5em;
+        font-size: 2em;
     }
     #about{
        font-size: 2em;
