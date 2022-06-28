@@ -7,10 +7,10 @@ var chosenLocation = Math.floor((Math.random() * 100) + 1) % 4;
 var chosenBasemap = Math.floor((Math.random() * 100) + 1) % 1;
 
 var places = [
-  [20, 38.892103, -77.036551, "Washington, DC"],
-  [14, 40.440637, -79.991701, "Pittsburgh, PA"],
+  [20, 38.892103, -77.036551, "Washington, DC, USA"],
+  [14, 40.440637, -79.991701, "Pittsburgh, PA, USA"],
   [14, 55.6816, 12.594167, "Copenhagen, Denmark"],
-  [13, 39.207785, -76.060032, "Kent County, MD"],
+  [13, 39.207785, -76.060032, "Chestertown, MD, USA"],
 ];
 
 var map = L.map('main-map', {
