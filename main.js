@@ -6,11 +6,11 @@
 var chosenLocation = Math.floor((Math.random() * 100) + 1) % 5;
 
 var places = [
-  [20, 38.892103, -77.036551, "Washington, DC, USA"],
-  [14, 40.440637, -79.991701, "Pittsburgh, PA, USA"],
-  [14, 55.6816, 12.594167, "Copenhagen, Denmark"],
+  [14, 38.892103, -77.036551, "Washington, DC, USA"],
+  [12, 40.440637, -79.991701, "Pittsburgh, PA, USA"],
+  [12, 55.6816, 12.594167, "Copenhagen, Denmark"],
   [13, 39.207785, -76.060032, "Chestertown, MD, USA"],
-  [10, 35.1856, 33.3823, "Cyprus"],
+  [7, 35.1856, 33.3823, "Cyprus"],
 ];
 
 var map = L.map('main-map', {
@@ -21,10 +21,11 @@ var map = L.map('main-map', {
 });
 
 L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/outdoors-v12/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ3VlcmlsbGVybyIsImEiOiJja2g2bmhuZDIwMG85MndybXo1OGE3OWhqIn0.wVTGMiNsncWf2pZrBkG9CQ', {
-  attribution: 'View of ' + places[chosenLocation][3] + ' | Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   minZoom: 1,
   maxZoom: 16
 }).addTo(map);
 
 //outdoors-v12
 //streets-v11
+//'View of ' + places[chosenLocation][3] + 

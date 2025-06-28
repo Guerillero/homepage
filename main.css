@@ -1,87 +1,134 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,700);
+
 html, body {
     padding:0;
     margin:0;
     height: 100%;
     width: 100%;
+    background-color: #e7e7e7;
+    color: #333;
+}
+#header{
+    background-color: #34495e;
+    color: #f6f6f6;
+    z-index: 10;
+    text-align: center;
 }
 #main{
-    position: absolute;
     width: 100%;
-    height: 100%;
 }
-#main-content{
-    z-index: 10;
-    position: absolute;
-    font-family: 'Roboto', sans-serif;
+h1{
+  text-align:left;
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
 }
-#name{
-    font-size: 3.5em;
+h2{
+  font-size: 1.5em;
+  font-family: 'Ibarra Real Nova', serif;
 }
-.name-first-letter{
-    display:inline-block;
-    color: mediumblue;
-    font-size: 1.33em;
+#quote{
+  width: 100%;
 }
-#about{
-    font-size: 2em;
+blockquote {
+  border-left: 3px solid #013220;
+  display:inline-block;
+  color: #f6f6f6;
+  padding: 0.5em;
 }
-#me{
-    font-size: 1.25em;
+blockquote p{
+  font-style: italic;
+}
+ul li{
+  padding: 0.2em;
 }
 a:link, a:visited{
-    color:black;
-}
-hr {
-  width: 80%;
+    color:#34495e;
 }
 
+@media(min-width: 1300px){
+  #main-block {
+    display: block;
+  }
 
-@media(min-width: 800px){
-    #main-content{
-        display:flex;
-        text-align:center;
-        background-color: #f6f6f6;
-        padding: 1%;
-        border: groove;
-        width: 30%;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-    #main-map{
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    }
-    #text{
-      flex: 4;
-    }
-    #logo{
-      flex: 1;
-    }
-    img{
+  #main-holder{
+      font-family: 'Roboto', sans-serif;
       position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-    }
+      text-align: left;
+      padding: 2%;
+      width: 50%;
+      left: 25%;
+      display: flex;
+  }
+
+  #sidebar{
+    width: 25%;
+    display: block;
+    background-color: #888888;
+    color: #f6f6f6;
+    padding: 1%;
+    border-radius: 25px;
+  }
+
+  #logo{
+    position: relative;
+    width: 90%;
+    left: 5%;
+  }
+
+  #logo img{
+    border-radius: 50%;
+  }
+
+  #name{
+    text-align:center;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  #pad{
+    width: 2%;
+  }
+
+  #content-col{
+    width: 75%;
+    display: block;
+  }
+
+  #main-map{
+    height:20em;
+    width: 80%;
+    left: 5%;
+    padding: 2%;
+  }
+  #pfooter{
+    width: 50%;
+    left: 25%;
+    position: relative;
+    text-align:center;
+    color: #34495e;
+    font-family: 'Roboto', sans-serif;
+    z-index: 10;
+    font-size: 0.8em;
+    padding-bottom: 3em;
+  }
 }
-@media(max-width: 800px){
-    #main{
-        background-color: #f6f6f6;
-    }
-    #main-content{
-        padding: 10%;
-        text-align: center;
-        width: 80%;
-    }
-    #main-map{
-        display: none;
-    }
-    #name{
-        font-size: 2em;
-    }
-    #about{
-       font-size: 2em;
-    }
+@media(max-width: 1300px){
+  #name{
+    padding: 2%;
+    text-align:left;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+  }
+  #content-col{
+      font-family: 'Roboto', sans-serif;
+      position: relative;
+      text-align: left;
+      padding: 2%;
+      width: 90%;
+      left: 5%;
+  }
+  #logo, #sidebar-text, #pfooter{
+    display: none;
+  }
 }
