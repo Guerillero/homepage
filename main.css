@@ -70,6 +70,10 @@ a:link, a:visited{
     border-radius: 25px;
   }
 
+  #sidebar-header{
+    display: none;
+  }
+
   #logo{
     position: relative;
     width: 90%;
@@ -120,6 +124,12 @@ a:link, a:visited{
     text-align:left;
     font-size: 2em;
     font-family: 'Roboto', sans-serif;
+  }
+  #sidebar-header{
+    text-align:left;
+    padding: 2%;
+    font-size: 0.5em;
+    display: inline;
   }
   #content-col{
       font-family: 'Roboto', sans-serif;
