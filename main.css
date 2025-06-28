@@ -100,6 +100,7 @@ a:link, a:visited{
     width: 80%;
     left: 5%;
     padding: 2%;
+    border-radius: 5%;
   }
   #pfooter{
     width: 50%;

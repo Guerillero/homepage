@@ -7,10 +7,10 @@ var chosenLocation = Math.floor((Math.random() * 100) + 1) % 5;
 
 var places = [
   [14, 38.892103, -77.036551, "Washington, DC, USA"],
-  [12, 40.440637, -79.991701, "Pittsburgh, PA, USA"],
+  [13, 40.440637, -79.991701, "Pittsburgh, PA, USA"],
   [12, 55.6816, 12.594167, "Copenhagen, Denmark"],
-  [13, 39.207785, -76.060032, "Chestertown, MD, USA"],
-  [7, 35.1856, 33.3823, "Cyprus"],
+  [14, 39.207785, -76.060032, "Chestertown, MD, USA"],
+  [8, 35.1856, 33.3823, "Cyprus"],
 ];
 
 var map = L.map('main-map', {
