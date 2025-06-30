@@ -1,78 +1,74 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
-@import url(https://fonts.googleapis.com/css?family=Ibarra+Real+Nova:400,700);
+@import url(https://fonts.googleapis.com/css?family=Faculty+Glyphic:400,700);
 
-html, body {
-    padding:0;
-    margin:0;
-    height: 100%;
-    width: 100%;
-    background-color: #e7e7e7;
-    color: #333;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #e7e7e7;
+  color: #333;
+  font-family: "Faculty Glyphic", sans-serif;
 }
-#header{
-    background-color: #34495e;
-    color: #f6f6f6;
-    z-index: 10;
-    text-align: center;
+#main {
+  width: 100%;
 }
-#main{
-    width: 100%;
-}
-h1{
-  text-align:left;
+h1 {
+  text-align: left;
   font-size: 2em;
-  font-family: 'Roboto', sans-serif;
 }
-h2{
+h2 {
   font-size: 1.5em;
-  font-family: 'Ibarra Real Nova', serif;
 }
-#quote{
+#quote {
   width: 100%;
 }
 blockquote {
   border-left: 3px solid #013220;
-  display:inline-block;
+  display: inline-block;
   color: #f6f6f6;
   padding: 0.5em;
 }
-blockquote p{
+blockquote p {
   font-style: italic;
 }
-ul li{
+ul li {
   padding: 0.2em;
 }
-a:link, a:visited{
-    color:#34495e;
+a:link,
+a:visited {
+  color: #34495e;
 }
-#pfooter{
-    width: 50%;
-    left: 25%;
-    position: relative;
-    text-align:center;
-    color: #34495e;
-    font-family: 'Roboto', sans-serif;
-    z-index: 10;
-    font-size: 0.8em;
-    padding-bottom: 3em;
+#pfooter {
+  width: 50%;
+  left: 25%;
+  position: relative;
+  text-align: center;
+  color: #34495e;
+  font-size: 0.8em;
+  padding-bottom: 3em;
+}
+
+@media (min-width: 1100px) {
+  #header {
+    display: none;
   }
 
-@media(min-width: 1100px){
   #main-block {
     display: block;
   }
 
-  #main-holder{
-      font-family: 'Roboto', sans-serif;
-      position: relative;
-      text-align: left;
-      padding: 2%;
-      width: 60%;
-      left: 20%;
-      display: flex;
+  #main-holder {
+    position: relative;
+    text-align: left;
+    padding: 2%;
+    width: 60%;
+    left: 20%;
+    display: flex;
   }
 
-  #sidebar{
+  #sidebar {
     width: 25%;
     display: block;
     background-color: #888888;
@@ -81,110 +77,141 @@ a:link, a:visited{
     border-radius: 25px;
   }
 
-  #sidebar-header{
+  #sidebar-header {
     display: none;
   }
 
-  .sidebar-text p{
+  .sidebar-text p {
     padding-left: 5%;
   }
 
-  #logo{
+  #logo {
     position: relative;
     width: 90%;
     left: 5%;
   }
 
-  #logo img{
+  #logo img {
     border-radius: 50%;
+    width: 100%;
   }
 
-  #name{
-    text-align:center;
+  #name {
+    text-align: center;
     font-size: 2em;
-    font-family: 'Roboto', sans-serif;
   }
-  
-  #pad{
+
+  #pad {
     width: 2%;
   }
 
-  #content-col{
+  #content-col {
     width: 75%;
     display: block;
   }
 
-  #main-map{
-    height:20em;
-    width: 80%;
-    left: 5%;
+  #main-map {
+    height: 20em;
+    width: 90%;
+    left: 2.5%;
     padding: 2%;
-    border-radius: 5%;
+    border-radius: 0%;
   }
-  #portfolio-grid{
-    display: flex;
-    grid-template-columns: 50%;
-    gap: 5em;
-    margin: 2em;
+  #portfolio-grid-holder {
+    display: block;
+    padding-bottom: 15%;
+  }
+  #portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30%);
+    gap: 2%;
   }
 
-  .map-card{
-    display: inline-block;
+  .map-card {
+    display: block;
     border: 1px solid #34495e;
     border-radius: 8px;
     padding: 1em;
     text-align: center;
-    max-width: 29%;
+    max-width: 100%;
     font-size: 0.75em;
     background-color: #f6f6f6;
   }
 
-  .map-card img{
+  .map-card img {
     max-width: 100%;
     border-radius: 4px;
   }
 }
-@media(max-width: 1100px){
-  #name{
-    padding: 2%;
-    text-align:left;
+@media (max-width: 1100px) {
+  #header {
+    padding: 5%;
+    background-color: #888888;
+    color: #f6f6f6;
+    z-index: 10;
+    display: flex;
+  }
+  #header a {
+    color: #f6f6f6;
+  }
+  #mobile-header-text {
+    display: block;
+    padding-top: 2%;
+  }
+  #mobile-header-name {
+    padding-bottom: 1%;
     font-size: 2em;
-    font-family: 'Roboto', sans-serif;
+    display: block;
   }
-  #sidebar-header{
-    text-align:left;
-    padding: 2%;
-    font-size: 0.5em;
-    display: inline;
+  #mobile-header-links {
+    font-size: 0.75em;
+    display: block;
   }
-  #content-col{
-      font-family: 'Roboto', sans-serif;
-      position: relative;
-      text-align: left;
-      padding: 2%;
-      width: 90%;
-      left: 5%;
+  #mobile-header-logo {
+    width: 25%;
+    padding-right: 3%;
   }
-  
-  #logo, .sidebar-text{
-    display: none;
-  }
-  
-  #portfolio-grid{
+  #mobile-header-logo img {
+    border-radius: 50%;
+    width: 100%;
     display: block;
   }
 
-  .map-card{
-    display: block;
+  #content-col {
+    position: relative;
+    text-align: left;
+    padding: 2%;
+    width: 90%;
+    left: 5%;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  #portfolio-grid-holder {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    padding-bottom: 60%;
+  }
+
+  #portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 49%);
+    gap: 1%;
+  }
+
+  .map-card {
     border: 1px solid #34495e;
     border-radius: 8px;
     padding: 1em;
     text-align: center;
-    max-width: 50%;
-    left: 25%;
+    max-width: 100%;
+    background-color: #f6f6f6;
   }
 
-  .map-card img{
+  .map-card img {
     max-width: 100%;
     border-radius: 4px;
   }
