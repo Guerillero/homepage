@@ -166,6 +166,8 @@ a:visited {
   #mobile-header-links {
     font-size: 0.75em;
     display: block;
+    padding-left: 20%;
+    padding-top: 4%;
   }
   #mobile-header-logo {
     width: 25%;
@@ -193,7 +195,7 @@ a:visited {
     position: relative;
     width: 90%;
     left: 5%;
-    padding-bottom: 60%;
+    padding-bottom: 30%;
   }
 
   #portfolio-grid {
@@ -214,5 +216,16 @@ a:visited {
   .map-card img {
     max-width: 100%;
     border-radius: 4px;
+  }
+
+  @media (max-width: 500px) {
+    #portfolio-grid-holder {
+      padding-bottom: 90%;
+    }
+    #portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 100%);
+      gap: 1%;
+    }
   }
 }
